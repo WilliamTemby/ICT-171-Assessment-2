@@ -1,3 +1,10 @@
 18/05/2025:
 Installed wordpress from wordpress.org
 Deployed to EC2 server using Apache2
+
+
+
+
+
+Step 1:
+ssh into server.
