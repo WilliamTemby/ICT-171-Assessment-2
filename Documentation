@@ -1,10 +1,41 @@
-18/05/2025:
-Installed wordpress from wordpress.org
-Deployed to EC2 server using Apache2
+**Server setup documentation**
 
+1. Create an Amazon EC2 account if not already done.
 
+   1. Navigate to <https://signin.aws.amazon.com/signup?request_type=register>
 
+   2. Follow all on-site prompts to create your account. Note that your account will be required to have 2-factor authentication enabled.
 
+2. In the top-right of the navigation bar, ensure that **Asia Pacific (Singapore)** is selected from the drop-down menu. ![A screenshot of a computer
 
-Step 1:
-ssh into server.
+   AI-generated content may be incorrect.](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdGMmJ3WgCT7a5EPrYp7s3v1KNeO4pvf0U3D2zjmgOTeMVpVGL2nWsMFivoZJHzbAUzLA-1-uUcPo1EkPC_tG9csbpVwFkklGRN8abwtsFY0AtVoQqakRwfee-w6PHnSyoKOyRbuA?key=AZxlHjFMsZPfBY2u5xqugw)
+
+3. Navigate EC2 dashboard, then select the orange **Launch instance** button.![A screenshot of a computer
+
+   AI-generated content may be incorrect.](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdDZiBUrZ1VXdaxpNDJWxp66YpocN_dBYKSu8qyvc-hwEONZwFBpWAizSuTdUfbeb-G9MzSDw_txXDKZuGXXH18x99Jofvscvg1LKDxrbxO1zZG_JofFzHYYPVKOfe_ftjsgrQnxg?key=AZxlHjFMsZPfBY2u5xqugw)
+
+4. In the **Applications and OS Images (Amazon Machine Image)** menu, select **Ubuntu** from the **Quick Start** tab. Leave the **Architecture** as **64-bit (x86).**![A screenshot of a computer
+
+   AI-generated content may be incorrect.](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcQucPtb09mCVQ7V_Jj_rkSwVCOcNSx9UjGZetKcp9QgH58gR9eQOOk1TS0UuzbDWM-2slVgy8UQa-w2swcYbevk6sm4LWYqh6rP73zMGfFLHtjCNYLDuoFV0XVx4ArYoN587juMg?key=AZxlHjFMsZPfBY2u5xqugw)
+
+5. Create a new **Key pair.**
+
+   1. On the **Key pair (login)** panel, select the **Create new key pair** link
+
+![A screenshot of a computer
+
+AI-generated content may be incorrect.](https://lh7-rt.googleusercontent.com/docsz/AD_4nXctOP9DghFAMdeGQZ-g4X-CReJiTpUHcX4DRBxWQug66K2dubvJgXnI6GzZl3BKualESw39AeT9LnSgqH9hND3j9MR2gV0omhuTIAmw1Ei4cIkbmAUgecqX-Avwfh_3dXw6qQn2MA?key=AZxlHjFMsZPfBY2u5xqugw)
+
+2. In the **Create key pair** dialog box, enter a name you wish to use for the keys. Ensure that **RSA** is selected for the **Key pair type** and that the **Private key file format** is **.pem**.![Screens screenshot of a computer
+
+   AI-generated content may be incorrect.](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcnETk5FIist9EwI0CaH2TKZ6onXYq3fM1k3BoluCw2kP3laO4hG4FwSsDrmJQbmNvggjDfSe3uleRg1M6gPlCAzg69tyWJfi8-_8iKcgF854TcEZjoZXLx1vAVbvE7pQYBUffA?key=AZxlHjFMsZPfBY2u5xqugw)
+
+3. After selecting **Create new key pair,** a new .pem file will begin downloading. **IMMEDIATELY BACK THIS UP TO YOUR ONEDRIVE OR OTHER SECURE CLOUD STORAGE ACCOUNT**.
+
+![A white paper with a blue check mark
+
+AI-generated content may be incorrect.](https://lh7-rt.googleusercontent.com/docsz/AD_4nXffdk2EbnRVCuQFtYzINbIHeL_NaanAmxYbKDoZ-HA7oxkYc0bmX_6CQn-DlHhi-ft4EyTrXK50nFSz4OGcAsZRhpI-4LPbwIOP3cfM5xtexylN_-v4thRSxUNjihxwElZMjrQi3A?key=AZxlHjFMsZPfBY2u5xqugw)
+
+6. Change to static IP
+
+**VM setup:**
