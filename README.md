@@ -45,3 +45,12 @@ Domain name: https://williamtemby171.com/
 6. Change to static IP
 
 **VM setup:**
+
+
+
+
+**References (APA 7th)**
+
+Tech Raj. 2022. “Create and Host a Wordpress Website on AWS EC2 with Your Own Domain Name!”
+Youtu.be. Google. June 22, 2022. https://youtu.be/8Uofkq718n8.
+
