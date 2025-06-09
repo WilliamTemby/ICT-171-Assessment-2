@@ -387,6 +387,10 @@ git commit -m "Backup on $(date '+%Y-%m-%d %H:%M:%S')"
 git push -f origin master
 ```
 
+I also created another github repository that's visable at this address: https://github.com/WilliamTemby/Website-Backups/tree/master
+
+The script, when run on a daily basis then commits the server's contents to this github repository as a backup system. A link to it, along with a screenshot of it in action is present on the home page of my site.
+
 
 The "crontab -e" command was then used to automate this task on a daily basis:
 ![image](https://github.com/user-attachments/assets/9d994124-9ed8-4152-af3b-bea9782cb2f6)
