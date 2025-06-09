@@ -4,7 +4,11 @@ Student ID: 35578349
 
 Domain name: https://williamtemby171.com/
 
+Global IP: 3.0.11.205
 
+Video Explainer: https://murdochuniversity-my.sharepoint.com/:v:/g/personal/35578349_student_murdoch_edu_au/EYY1uOOoaKNAt4svqqtdnK0BhN78-BI77gbxe6MtRMSWCQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=NJIPyJ
+
+(Note: You will need to be signed into your murdoch account in order to access this video)
 
 **Server setup documentation**
 
