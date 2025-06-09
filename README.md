@@ -201,7 +201,7 @@ Video explainer: https://murdochuniversity-my.sharepoint.com/:v:/g/personal/3557
 ![image](https://github.com/user-attachments/assets/5f341db3-a9ab-4c59-940c-1cc9768c88f7)
 
 
-22c. Paste the contents of your clipboard from **21**
+22c. Paste the contents of your clipboard from **Step 21**
 
 ![image](https://github.com/user-attachments/assets/4501ae06-05c3-4ba1-b5c0-10a312601561)
 
@@ -256,7 +256,61 @@ Video explainer: https://murdochuniversity-my.sharepoint.com/:v:/g/personal/3557
 ![image](https://github.com/user-attachments/assets/ad2a157e-3e8d-4d8b-af1c-78eaee8977be)
 
 
-34. Purchase and link a domain name
+34. Purchase and link a domain name. This documentation will use namecheap as an example, however similar steps will apply while purchasing from other providers.
+
+34a. Sign-up for an account
+
+![image](https://github.com/user-attachments/assets/d8837456-5151-43c1-a94e-f87fbd17fe2e)
+
+
+34b. Search for a domain name you wish to use
+
+![image](https://github.com/user-attachments/assets/5201b816-e39b-463f-a4c0-de4651f22a8a)
+
+
+34c. Add the domain you wish to use to cart
+
+![image](https://github.com/user-attachments/assets/3b75012f-dd5f-4c6c-ac93-b4cc61c2f1c6)
+
+
+34d. Ensure domain registration is enabled before purchasing the domain
+
+![image](https://github.com/user-attachments/assets/86c52240-22df-4312-bf74-1ec56d103c20)
+
+
+34e. Navigate to your domain list and select "MANAGE"
+
+![image](https://github.com/user-attachments/assets/88b2c2f7-619c-488d-af05-4a7b7e6a89a6)
+
+
+34f. Select the "Advanced DNS" tile, and create 2 records. Ensure the type is "A Record", and that the Host for one is "@", and for the other is "www". The Value for both should be the Elastic IP address of the server, with TTL being set to automatic.
+
+
+![image](https://github.com/user-attachments/assets/f704d6f6-6fc4-441a-8a75-a09195f8d462)
+
+
+35. Return back to the WordPress dashboard, then navigate to the settings page.
+
+![image](https://github.com/user-attachments/assets/66215a95-1695-44d8-a8de-ba5b4fe2a3ec)
+
+
+
+36. Change the addresses at "WordPress Address (URL)" and "Site Address (URL)" from the elastic IP to http://\[YOUR DOMAIN NAME]
+
+![image](https://github.com/user-attachments/assets/2d79f2ec-6ae4-4954-9681-36067bbfac50)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
