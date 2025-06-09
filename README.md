@@ -56,9 +56,11 @@ Video explainer: https://murdochuniversity-my.sharepoint.com/:v:/g/personal/3557
 
 ![image](https://github.com/user-attachments/assets/b9782ad0-5376-4ba3-800a-08ed495f9d35)
 
+
 6b. Right-click on the server you wish to allocate an elastic IP to, and select "Allocate Elastic IP address" in the context menu
 
 ![image](https://github.com/user-attachments/assets/beb1ffed-98f5-4b51-9ebf-71a8d968496a)
+
 
 6c. Click the "Allocate" button in the menu - changing any settings is not required
 
@@ -71,9 +73,11 @@ Video explainer: https://murdochuniversity-my.sharepoint.com/:v:/g/personal/3557
 
 ![image](https://github.com/user-attachments/assets/8659959a-8d56-4d7c-babb-c68b8279ed24)
 
+
 7b. Launch MobaXterm, then select "Session" tile in the top left, then "SSH" on the dialog box in the same location, and finally "Advanced SSH settings"
 
 ![image](https://github.com/user-attachments/assets/ade61503-86b7-48b5-9405-af79b4b8daaf)
+
 
 7c. Populate the dialogue boxes with the copied IP, username (This should just be ubuntu, if not, right-click your server instance in EC2, select "Connect to instance", then "SSH Client", and copy the name before the "@ec2" string)
 
@@ -82,19 +86,24 @@ Video explainer: https://murdochuniversity-my.sharepoint.com/:v:/g/personal/3557
 
 8. Install Apache2 by running "sudo apt install apache2" into the command line. Ensure you select yes on any dialogs
 
+
 ![image](https://github.com/user-attachments/assets/e4cc5ab4-88b4-4be5-bb18-dfc287fbe791)
 
-9. Test your server by navigating to http://\[Insert your elastic IP]
+
+9. Test your server by navigating to http://\[Insert your elastic IP] in a web browser
 
 ![image](https://github.com/user-attachments/assets/7e190f96-e9ee-4d41-9a4f-b7cc139ebb18)
+
 
 10. Install php and mySQL by running "sudo apt install php libapache2-mod-php php-mysql". Confirm yes on any dialoges
 
 ![image](https://github.com/user-attachments/assets/93bd4333-9463-4a16-9d60-48655a0fdd67)
 
+
 11. Install mySQL server by running "sudo apt install mysql-server". Confirm yes on any dialoges
 
 ![image](https://github.com/user-attachments/assets/b702c581-edf1-42ba-b429-31127974f8a5)
+
 
 12. Create mySQL account
 
@@ -102,9 +111,92 @@ Video explainer: https://murdochuniversity-my.sharepoint.com/:v:/g/personal/3557
 
 ![image](https://github.com/user-attachments/assets/c9635cfc-4b86-49d8-a83d-99c14aee6229)
 
+
 12b. Run "ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password by '\[INSERT PASSWORD]';"
 
 ![image](https://github.com/user-attachments/assets/f78554d5-c9bf-4a5a-b864-35aada70fdb5)
+
+
+12c. Run "CREATE USER '\[INSERT USERNAME]'@localhost IDENTIFIED BY '\[INSERT PASSWORD]';"
+
+![image](https://github.com/user-attachments/assets/31c74188-12e4-4459-a900-5600d4d4cc48)
+
+
+13. Create a database by running "CREATE DATABASE wp;"
+
+![image](https://github.com/user-attachments/assets/13fe9d03-b39e-4433-9a50-21c5833b6fa0)
+
+
+14. Grant privileges to the new user by running "GRANT ALL PRIVILEGES ON wp.* TO '\[INSERT USERNAME]'@localhost;"
+
+![image](https://github.com/user-attachments/assets/0d078c5e-1345-4621-9e27-ddeaf01f68bc)
+
+
+15. Press ctrl+D to exit mySQL, then create a temp folder by running "sudo mkdir temp"
+
+![image](https://github.com/user-attachments/assets/ffbb3b5f-2832-46ec-b7d6-e20c1ad0441e)
+
+
+16. cd into the temp folder by running "cd /home/ubuntu/temp/"
+
+![image](https://github.com/user-attachments/assets/16473c9b-e896-42d8-a67f-b4ea4c811426)
+
+
+17. Download Wordpress
+
+17a. Navigate to wordpress.org in a web browser, and select the top-right "Get WordPress" button
+
+![image](https://github.com/user-attachments/assets/572895b4-c063-4355-bcc6-bdc822ef9201)
+
+
+17b. Select the "Releases" link on the "Get WordPress page
+
+![image](https://github.com/user-attachments/assets/320ab80d-c18b-44f7-bc86-c0f0cfdec066)
+
+
+17c. Right-click and select "Copy Link" on the "tar.gz" link for the latest release
+
+![image](https://github.com/user-attachments/assets/4075b6de-473b-4538-aed9-91324af17c35)
+
+
+17d. Run "sudo wget \[THE LINK YOU COPIED]"
+
+![image](https://github.com/user-attachments/assets/8d6a4a12-c2e8-4e14-9164-cba2b18613f5)
+
+
+17e. Run "sudo tar -xvf \[FILE YOU DOWNLOADED]
+
+![image](https://github.com/user-attachments/assets/cebc0a8e-a95b-4e8c-a205-b5c2f79c172d)
+
+
+18. Move the wordpress folder to the apache document folder by running "sudo mv wordpress/ /var/www/html"
+
+![image](https://github.com/user-attachments/assets/355073bc-c3cc-473b-a9b4-66f1d5ed4f9d)
+
+
+19. Navigate to 
+
+![image](https://github.com/user-attachments/assets/8d6e9b1c-045e-4c90-91b3-7f3692837254)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
