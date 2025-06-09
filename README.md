@@ -10,7 +10,7 @@ Video explainer: https://murdochuniversity-my.sharepoint.com/:v:/g/personal/3557
 
 
 
-**Server setup documentation**
+**Server Setup Documentation**
 
 1. Create an Amazon EC2 account if not already done.
 
@@ -294,10 +294,34 @@ Video explainer: https://murdochuniversity-my.sharepoint.com/:v:/g/personal/3557
 ![image](https://github.com/user-attachments/assets/66215a95-1695-44d8-a8de-ba5b4fe2a3ec)
 
 
-
 36. Change the addresses at "WordPress Address (URL)" and "Site Address (URL)" from the elastic IP to http://\[YOUR DOMAIN NAME]
 
 ![image](https://github.com/user-attachments/assets/2d79f2ec-6ae4-4954-9681-36067bbfac50)
+
+
+37. Run "sudo apt-get update" to ensure all your programs are up-to-date
+
+![image](https://github.com/user-attachments/assets/ecc73bf1-0c29-4aca-be4d-3bb471632303)
+
+
+38. Run "sudo apt install certbot python3-certbot-apache"
+
+![image](https://github.com/user-attachments/assets/c656c9a3-d4db-4aa6-b390-c5fd59bdb161)
+
+
+39. Run "sudo certbot --apache" and fill each dialog with the requested information
+
+![image](https://github.com/user-attachments/assets/949c4d95-e8de-48b0-9858-aebb980ea9f2)
+
+
+Your secure wordpress site should now be set-up!
+
+
+**Script Documentation**
+
+
+
+
 
 
 
