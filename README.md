@@ -231,6 +231,45 @@ Video explainer: https://murdochuniversity-my.sharepoint.com/:v:/g/personal/3557
 ![image](https://github.com/user-attachments/assets/79a249c4-f648-4003-b494-1af4b6eba915)
 
 
+28. Run "cd /etc/apache2/sites-available/"
+
+![image](https://github.com/user-attachments/assets/19d0e7ec-c32b-4527-9d54-33f15bdbe1e7)
+
+
+29. Run "sudo nano 000-default.conf"
+
+![image](https://github.com/user-attachments/assets/5659534c-98b5-45ed-a0b5-3911cbc16d52)
+
+
+30. Locate the line "DocumentRoot /var/www/html" and change its contents to "DocumentRoot /var/www/html/wordpress"
+
+![image](https://github.com/user-attachments/assets/f9169f86-b20f-4dc8-aed9-2a6299a1cef5)
+
+
+32. Write this using Ctrl+O, then pressing enter to confirm
+
+![image](https://github.com/user-attachments/assets/1da1a381-46aa-467e-90df-da0fe739d7ce)
+
+
+33. Restart the server by running "sudo systemctl restart apache2"
+
+![image](https://github.com/user-attachments/assets/ad2a157e-3e8d-4d8b-af1c-78eaee8977be)
+
+
+34. Purchase and link a domain name
+
+
+
+ 
+
+
+
+
+
+
+
+
+
 
 
 
