@@ -75,12 +75,40 @@ Video explainer: https://murdochuniversity-my.sharepoint.com/:v:/g/personal/3557
 
 ![image](https://github.com/user-attachments/assets/ade61503-86b7-48b5-9405-af79b4b8daaf)
 
+7c. Populate the dialogue boxes with the copied IP, username (This should just be ubuntu, if not, right-click your server instance in EC2, select "Connect to instance", then "SSH Client", and copy the name before the "@ec2" string)
+
+![image](https://github.com/user-attachments/assets/c03eabd8-95ec-4f68-a9df-104e413b53a8)
+
+
+8. Install Apache2 by running "sudo apt install apache2" into the command line. Ensure you select yes on any dialogs
+
+![image](https://github.com/user-attachments/assets/e4cc5ab4-88b4-4be5-bb18-dfc287fbe791)
+
+9. Test your server by navigating to http://\[Insert your elastic IP]
+
+![image](https://github.com/user-attachments/assets/7e190f96-e9ee-4d41-9a4f-b7cc139ebb18)
+
+10. Install php and mySQL by running "sudo apt install php libapache2-mod-php php-mysql". Confirm yes on any dialoges
+
+![image](https://github.com/user-attachments/assets/93bd4333-9463-4a16-9d60-48655a0fdd67)
+
+11. Install mySQL server by running "sudo apt install mysql-server". Confirm yes on any dialoges
+
+![image](https://github.com/user-attachments/assets/b702c581-edf1-42ba-b429-31127974f8a5)
+
+12. Create mySQL account
+
+12a. Run "sudo mysql -u root"
+
+![image](https://github.com/user-attachments/assets/c9635cfc-4b86-49d8-a83d-99c14aee6229)
+
+12b. Run "ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password by '\[INSERT PASSWORD]';"
+
+![image](https://github.com/user-attachments/assets/f78554d5-c9bf-4a5a-b864-35aada70fdb5)
 
 
 
 
-
-**VM setup:**
 
 
 
