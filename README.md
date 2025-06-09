@@ -174,9 +174,75 @@ Video explainer: https://murdochuniversity-my.sharepoint.com/:v:/g/personal/3557
 ![image](https://github.com/user-attachments/assets/355073bc-c3cc-473b-a9b4-66f1d5ed4f9d)
 
 
-19. Navigate to 
+19. Navigate to http://\[Insert your elastic IP]/wordpress
 
 ![image](https://github.com/user-attachments/assets/8d6e9b1c-045e-4c90-91b3-7f3692837254)
+
+
+20. Select "Let's Go!" on the launch screen before populating the text boxes with their corresponding credentials. Database Host should be set to "localhost", and Table Prefix should be set to "wp_"
+
+![image](https://github.com/user-attachments/assets/8adedb89-9d0d-4224-ac39-4adb118718e4)
+
+
+21. Copy the contents of the "**Configuration rules for wp-config.php**" text, either through the context menu or using Ctrl+A, then Ctrl+C
+
+![image](https://github.com/user-attachments/assets/deb61127-8acf-4a9d-b22a-75dcb411e50d)
+
+
+22. Configure the wp-config.php file
+    
+22a. Run "cd /var/www/html/wordpress" 
+
+![image](https://github.com/user-attachments/assets/2fddf632-a9db-423b-b1d9-e2e164d83034)
+
+
+22b. Run "sudo nano wp-config.php"
+
+![image](https://github.com/user-attachments/assets/5f341db3-a9ab-4c59-940c-1cc9768c88f7)
+
+
+22c. Paste the contents of your clipboard from **21**
+
+![image](https://github.com/user-attachments/assets/4501ae06-05c3-4ba1-b5c0-10a312601561)
+
+
+22d. Write this using Ctrl+O, then pressing enter to confirm
+
+![image](https://github.com/user-attachments/assets/26472326-77ac-4212-ab8c-154539e10b43)
+
+
+23. Return to your WordPress browser tab, then click "Run the installation"
+
+![image](https://github.com/user-attachments/assets/df6b6518-d576-4f25-886d-4326f8922008)'
+
+
+24. Populate the contents of the text boxes. Ensure strong credentials are used, though
+
+![image](https://github.com/user-attachments/assets/563d8b8a-6ecf-46be-abed-228d691cd702)
+
+
+25. Confirm the details, then select log-in
+
+![image](https://github.com/user-attachments/assets/89f7867e-973c-44ad-a3ec-b135bd850baa)
+
+
+27. Enter your login credentials
+
+![image](https://github.com/user-attachments/assets/79a249c4-f648-4003-b494-1af4b6eba915)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
